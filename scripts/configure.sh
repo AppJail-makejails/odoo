@@ -1,11 +1,11 @@
 #!/bin/sh
 
 ODOO_CONFIG="/usr/local/etc/odoo/odoo.conf"
-ODOO_ADMIN_PASSWD="${ODOO_ADMIN_PASSWD:-admin}"
-ODOO_DB_HOST="${ODOO_DB_HOST:-postgres}"
-ODOO_DB_PORT="${ODOO_DB_PORT:-5432}"
-ODOO_DB_USER="${ODOO_DB_USER:-odoo}"
-ODOO_DB_PASSWORD="${ODOO_DB_PASSWORD:-odoo}"
+ODOO_ADMIN_PASSWD="${ODOO_ADMIN_PASSWD:-admin}"; export ODOO_ADMIN_PASSWD
+ODOO_DB_HOST="${ODOO_DB_HOST:-postgres}"; export ODOO_DB_HOST
+ODOO_DB_PORT="${ODOO_DB_PORT:-5432}"; export ODOO_DB_PORT
+ODOO_DB_USER="${ODOO_DB_USER:-odoo}"; export ODOO_DB_USER
+ODOO_DB_PASSWORD="${ODOO_DB_PASSWORD:-odoo}"; export ODOO_DB_PASSWORD
 
 set -e
 set -o pipefail
