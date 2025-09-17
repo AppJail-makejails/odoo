@@ -55,7 +55,7 @@ You can configure Odoo through environment variables in the build stage of this 
 
 ### Arguments
 
-* `odoo_config` (default: `files/config.ini`): Initial Odoo configuration file.
+* `odoo_config` (default: `files/odoo.conf`): Initial Odoo configuration file.
 * `odoo_ajspec` (default: `gh+AppJail-makejails/odoo`): Entry point where the `appjail-ajspec(5)` file is located.
 * `odoo_database` (default: `odoo`): Database name.
 * `odoo_tag` (default: `13.5`): see [#tags](#tags).
