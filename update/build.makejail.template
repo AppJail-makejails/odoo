@@ -1,0 +1,6 @@
+INCLUDE options/options.makejail
+INCLUDE options/volumes.makejail
+
+ARG odoo_ver?
+
+PKG py%%PYVER%%-odoo${odoo_ver}

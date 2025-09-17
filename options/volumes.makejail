@@ -1,0 +1,2 @@
+OPTION volume=odoo-data mountpoint:/var/lib/odoo owner:267 group:267
+OPTION volume=odoo-done mountpoint:/.odoo-done

@@ -1,0 +1,25 @@
+INCLUDE options/options.makejail
+
+ARG odoo_tag=13.5
+ARG odoo_ajspec=gh+AppJail-makejails/odoo
+ARG odoo_config=files/odoo.conf
+ARG odoo_database=odoo
+
+FROM --entrypoint "${odoo_ajspec}" odoo:${odoo_tag}
+
+COPY ${odoo_config} /usr/local/etc/odoo/odoo.conf
+
+COPY scripts
+RUN /scripts/configure.sh
+CMD rm -rf /scripts
+
+SYSRC odoo_database=${odoo_database}
+SYSRC odoo_enable=YES
+
+RAW if appjail cmd jexec "${APPJAIL_JAILNAME}" [ -f "/.odoo-done/skip-scripts" ]; then
+        SERVICE odoo initdb
+RAW else
+        SERVICE odoo start
+        CMD mkdir -p "/.odoo-done"
+        CMD touch "/.odoo-done/skip-scripts"
+RAW fi

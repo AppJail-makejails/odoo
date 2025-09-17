@@ -58,7 +58,7 @@ You can configure Odoo through environment variables in the build stage of this 
 * `odoo_config` (default: `files/config.ini`): Initial Odoo configuration file.
 * `odoo_ajspec` (default: `gh+AppJail-makejails/odoo`): Entry point where the `appjail-ajspec(5)` file is located.
 * `odoo_database` (default: `odoo`): Database name.
-* `odoo_tag` (default: `13.5`): see [#tags](#tags).
+* `odoo_tag` (default: `%%TAG1%%`): see [#tags](#tags).
 
 ### Environment
 
@@ -79,9 +79,9 @@ You can configure Odoo through environment variables in the build stage of this 
 
 | Tag                  | Arch     | Version            | Type   | `odoo_version` |
 | -------------------- | -------- | ------------------ | ------ | -------------- |
-| `13.5`           | `amd64`  | `13.5-RELEASE` | `thin` |       -        |
-| `13.5-16` | `amd64`  | `13.5-RELEASE` | `thin` |   16    |
-| `13.5-17` | `amd64`  | `13.5-RELEASE` | `thin` |   17    |
-| `14.3`           | `amd64`  | `14.3-RELEASE` | `thin` |       -        |
-| `14.3-16` | `amd64`  | `14.3-RELEASE` | `thin` |   16    |
-| `14.3-17` | `amd64`  | `14.3-RELEASE` | `thin` |   17    |
+| `%%TAG1%%`           | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |       -        |
+| `%%TAG1%%-%%ODOO1%%` | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |   %%ODOO1%%    |
+| `%%TAG1%%-%%ODOO2%%` | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |   %%ODOO2%%    |
+| `%%TAG2%%`           | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |       -        |
+| `%%TAG2%%-%%ODOO1%%` | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |   %%ODOO1%%    |
+| `%%TAG2%%-%%ODOO2%%` | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |   %%ODOO2%%    |
