@@ -17,9 +17,9 @@ SYSRC odoo_database=${odoo_database}
 SYSRC odoo_enable=YES
 
 RAW if appjail cmd jexec "${APPJAIL_JAILNAME}" [ -f "/.odoo-done/skip-scripts" ]; then
-        SERVICE odoo initdb
-RAW else
         SERVICE odoo start
+RAW else
+        SERVICE odoo initdb
         CMD mkdir -p "/.odoo-done"
         CMD touch "/.odoo-done/skip-scripts"
 RAW fi
