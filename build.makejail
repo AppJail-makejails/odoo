@@ -3,4 +3,4 @@ INCLUDE options/volumes.makejail
 
 ARG odoo_ver?
 
-PKG py311-odoo${odoo_ver} initool
+PKG py311-odoo${odoo_ver} initool py311-setuptools
