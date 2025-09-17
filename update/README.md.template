@@ -37,8 +37,8 @@ mount.devfs
 
 ### Start an Odoo instance
 
-```sh
-appjail makejail \
+```console
+$ appjail makejail \
     -j odoo \
     -f gh+AppJail-makejails/odoo \
     -o virtualnet=":<random> default" \
