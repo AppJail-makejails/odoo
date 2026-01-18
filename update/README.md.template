@@ -82,6 +82,6 @@ You can configure Odoo through environment variables in the build stage of this 
 | `%%TAG1%%`           | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |       -        |
 | `%%TAG1%%-%%ODOO1%%` | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |   %%ODOO1%%    |
 | `%%TAG1%%-%%ODOO2%%` | `amd64`  | `%%TAG1%%-RELEASE` | `thin` |   %%ODOO2%%    |
-| `%%TAG2%%`           | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |       -        |
-| `%%TAG2%%-%%ODOO1%%` | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |   %%ODOO1%%    |
-| `%%TAG2%%-%%ODOO2%%` | `amd64`  | `%%TAG2%%-RELEASE` | `thin` |   %%ODOO2%%    |
+| `%%TAG2%%`           | `amd64`  | `%%TAG2%%` | `thin` |       -        |
+| `%%TAG2%%-%%ODOO1%%` | `amd64`  | `%%TAG2%%` | `thin` |   %%ODOO1%%    |
+| `%%TAG2%%-%%ODOO2%%` | `amd64`  | `%%TAG2%%` | `thin` |   %%ODOO2%%    |

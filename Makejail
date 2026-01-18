@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG odoo_tag=13.5
+ARG odoo_tag=14.3
 ARG odoo_ajspec=gh+AppJail-makejails/odoo
 ARG odoo_config=files/odoo.conf
 ARG odoo_database=odoo
