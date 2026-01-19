@@ -80,8 +80,8 @@ You can configure Odoo through environment variables in the build stage of this 
 | Tag                  | Arch     | Version            | Type   | `odoo_version` |
 | -------------------- | -------- | ------------------ | ------ | -------------- |
 | `14.3`           | `amd64`  | `14.3-RELEASE` | `thin` |       -        |
-| `14.3-16` | `amd64`  | `14.3-RELEASE` | `thin` |   16    |
 | `14.3-17` | `amd64`  | `14.3-RELEASE` | `thin` |   17    |
+| `14.3-18` | `amd64`  | `14.3-RELEASE` | `thin` |   18    |
 | `15`           | `amd64`  | `15` | `thin` |       -        |
-| `15-16` | `amd64`  | `15` | `thin` |   16    |
 | `15-17` | `amd64`  | `15` | `thin` |   17    |
+| `15-18` | `amd64`  | `15` | `thin` |   18    |
