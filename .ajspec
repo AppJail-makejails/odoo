@@ -40,4 +40,3 @@ tags+: 15-17
 15-17.sum.amd64: f08fdfba391e16334481c0f8d157a41380d9746a488b337d6bf1843b7e7b73b3
 15-17.size.amd64: 590712682
 15-17.source.amd64: "http://appjail.hpc.at/odoo/15-17-amd64-image.appjail"
-maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
