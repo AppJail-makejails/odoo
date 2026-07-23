@@ -236,6 +236,8 @@ services:
     volumes:
       - data: /data
       - secrets: odoo-secrets
+      - config: /usr/local/etc/odoo
+      - addons: /mnt/extra-addons
     oci:
       environment:
         - HOST: odoo-db
@@ -265,6 +267,10 @@ volumes:
     device: /var/appjail-volumes/odoo/data
   db:
     device: /var/appjail-volumes/odoo/db
+  config:
+    device: !ENV '${PWD}/config'
+  addons:
+    device: !ENV '${PWD}/addons'
   secrets:
     device: /var/appjail-volumes/odoo/secrets
     type: '<volumefs>'
