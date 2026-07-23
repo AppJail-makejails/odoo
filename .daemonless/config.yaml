@@ -1,0 +1,35 @@
+build:
+  variants:
+    - tag: 15.1
+      containerfile: Containerfile
+      aliases: ["latest"]
+      default: true
+      args:
+        FREEBSD_RELEASE: "15.1"
+        PYVER: "312"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
+    - tag: 15.1-16
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        ODOOVER: "16"
+        PYVER: "312"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
+    - tag: 15.1-17
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        ODOOVER: "17"
+        PYVER: "312"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
+    - tag: 15.1-18
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        ODOOVER: "18"
+        PYVER: "312"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
